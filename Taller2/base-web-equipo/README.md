@@ -20,3 +20,26 @@ A partir de ahí, cada persona trabaja en su rama sobre la zona de su issue.
 ## Qué no hay que cambiar
 
 Los nombres de archivo y la estructura de carpetas. En los retos siguientes se trabaja sobre esos mismos archivos, y los escenarios de conflicto están pensados para esta estructura.
+
+## Como trabajamos: 
+¿Cómo se nombran las ramas de trabajo? Poned los ejemplos reales que habéis usado. 
+
+feature/1-cabecera 
+
+feature/2-presentacion 
+
+feature/3-footer 
+
+feature/4-paleta 
+
+Las hemos nombrado con la siguiente fórmula: 
+
+Feature/nº y nombre del isue. 
+
+
+¿Qué hay que hacer antes de fusionar en main? 
+Un pull en el main para coger todo el trabajo de los compañeros para evitar conflictos
+
+¿Qué archivos no se suben al repositorio? 
+
+Se suben todos en este caso.
