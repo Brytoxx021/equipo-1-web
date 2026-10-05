@@ -41,7 +41,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Contenido */con marcadores), después (con los dos cambios integrados) y las dos comparaciones
+/* Contenido */
 main {
   max-width: 60rem;
   margin: 0 auto;
@@ -51,8 +51,7 @@ main {
 /* Issue #2 · Fichas de los miembros */
 .miembro {
   border: 1px solid #dddddd;
-  border-radius: 6px;con marcadores), después (con los dos cambios integrados) y las dos comparaciones
-  padding: 1rem;
+  border-radius: 6px;
   margin-bottom: 1rem;
 }
 
