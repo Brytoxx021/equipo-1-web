@@ -7,14 +7,14 @@
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "Goudy Bookletter 1911", sans-serif;
   line-height: 1.5;
   color: #222222;
 }
 
 /* Issue #1 · Cabecera y menú */
 header {
-  background: #1d3557;
+  background: #550000;
   color: #ffffff;
   padding: 1.5rem 1rem;
 }
@@ -68,10 +68,13 @@ main {
 
 /* Issue #3 · Pie */
 footer {
-  background: #f1f1f1;
+  background: #55000065;
   padding: 1rem;
   text-align: center;
 }
 
 /* Issue #4 · Paleta y tipografía del equipo.
-   Escribid aquí vuestros cambios de color y de tipo de letra. */
+  He cambiado los colores del azul a un color granate en el header
+  y abajo más light para contraste
+  y la letra a un subtipo de sans-serif que queda elegante.
+*/
