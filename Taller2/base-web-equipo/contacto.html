@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo NN - Contacto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Issue #1 · Cabecera con el nombre del equipo y menú de navegación -->
+  <header>
+    <h1>Equipo Hispania</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">El equipo</a></li>
+        <li><a href="#proyecto">El proyecto</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <form class="formulario-contacto" action="#" method="post">
+      <h2>Contacto</h2>
+
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="asunto">Asunto</label>
+      <input type="text" id="asunto" name="asunto" required>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </main>
+</body>
+
+  <footer id="contacto">
+    <p>O si prefieres, contáctanos por equipo-1@example.com. ¡Muchas gracias!</p>
+  </footer>
+
+</html>

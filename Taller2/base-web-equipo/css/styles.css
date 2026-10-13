@@ -81,3 +81,50 @@ footer {
   y abajo más light para contraste
   y la letra a un subtipo de sans-serif que queda elegante.
 */
+
+/* Formulario de contacto */
+.formulario-contacto {
+  max-width: 35rem;
+  margin: 2rem auto 5rem;
+  padding: 1.5rem;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+}
+
+.formulario-contacto h2 {
+  margin-top: 0;
+}
+
+.formulario-contacto label {
+  display: block;
+  margin: 1rem 0 0.3rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.formulario-contacto textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.2rem;
+  border: 0;
+  border-radius: 4px;
+  background: #000000;
+  color: #ffffff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+  background: #444444;
+}
