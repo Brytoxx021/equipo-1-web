@@ -10,6 +10,12 @@ body {
   font-family: "Goudy Bookletter 1911", sans-serif;
   line-height: 1.5;
   color: #222222;
+  background: #fff;
+}
+
+body.dark {
+  background: #121212;
+  color: #fff;
 }
 
 /* Issue #1 · Cabecera y menú */
