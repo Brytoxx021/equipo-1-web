@@ -30,9 +30,28 @@
       <p>Una descripción breve de lo que hace vuestra página.</p>
     </section>
 
+    <!-- Sección de imágenes con Carrusel -->
     <section id="imagenes">
-      <img id="gatitos" src="./img/gatos.jpg" alt="gatos">
+      <div class="carrusel">
+        <div class="carrusel-imagenes">
+          <img class="carrusel-img active" src="./img/gatos.jpg" alt="gatos 1">
+          <img class="carrusel-img" src="./img/gatos2.jpg" alt="gatos 2">
+          <img class="carrusel-img" src="./img/gatos3.jpg" alt="gatos 3">
+        </div>
+
+        <!-- Botones anterior / siguiente -->
+        <button class="carrusel-btn prev" onclick="cambiarImagen(-1)">&#10094;</button>
+        <button class="carrusel-btn next" onclick="cambiarImagen(1)">&#10095;</button>
+
+        <!-- Puntos indicadores -->
+        <div class="carrusel-puntos">
+          <span class="punto active" onclick="irAImagen(0)"></span>
+          <span class="punto" onclick="irAImagen(1)"></span>
+          <span class="punto" onclick="irAImagen(2)"></span>
+        </div>
+      </div>
     </section>
+
     <!-- Boton de cambio de tema que cambia los colores blancos por colores negros -->
     <button onclick="document.body.classList.toggle('dark')">🌙</button>
   </main>
@@ -41,6 +60,36 @@
   <footer id="contacto">
     <p>Contáctanos a equipo-1@example.com. ¡Muchas gracias!</p>
   </footer>
+
+  <!-- Script del carrusel -->
+  <script>
+    let indice = 0;
+
+    function mostrarImagen(i) {
+      const imagenes = document.querySelectorAll('.carrusel-img');
+      const puntos = document.querySelectorAll('.punto');
+
+      if (i >= imagenes.length) indice = 0;
+      else if (i < 0) indice = imagenes.length - 1;
+      else indice = i;
+
+      imagenes.forEach((img, idx) => {
+        img.classList.toggle('active', idx === indice);
+      });
+
+      puntos.forEach((p, idx) => {
+        p.classList.toggle('active', idx === indice);
+      });
+    }
+
+    function cambiarImagen(direccion) {
+      mostrarImagen(indice + direccion);
+    }
+
+    function irAImagen(i) {
+      mostrarImagen(i);
+    }
+  </script>
 
 </body>
 </html>
